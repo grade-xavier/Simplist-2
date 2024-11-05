@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:simplist/manage_tasks_page.dart';
 import 'package:simplist/models.dart';
 import 'package:simplist/todo_list_widget.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ManageListsPage extends StatefulWidget {
   final String title;
@@ -29,8 +30,9 @@ class _ManageListsPageState extends State<ManageListsPage> {
         searchInputController.text = "";
       });
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Type a title"), backgroundColor: Colors.red));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(AppLocalizations.of(context)!.errMsgMissingTitle),
+          backgroundColor: Colors.red));
     }
   }
 
@@ -61,8 +63,7 @@ class _ManageListsPageState extends State<ManageListsPage> {
                         contentPadding:
                             EdgeInsets.symmetric(horizontal: 15, vertical: 0),
                         border: InputBorder.none,
-                        hintText: "Search or add list",
-                        
+                        hintText: AppLocalizations.of(context)!.searchOrAddList,
                       ),
                       onChanged: (value) => {setState(() {})},
                       onEditingComplete: addButtonClick,
@@ -73,8 +74,7 @@ class _ManageListsPageState extends State<ManageListsPage> {
                     height: 50,
                     width: 50,
                     child: IconButton(
-                        //color: Colors.blue,
-                        //backgroundColor:Colors.gray,
+                        tooltip: AppLocalizations.of(context)!.addList,
                         onPressed: addButtonClick,
                         icon: Icon(Icons.add)),
                   ),
@@ -94,7 +94,6 @@ class _ManageListsPageState extends State<ManageListsPage> {
                         return TodoList(
                           todoList: todoList,
                           onOpen: () => {
-                            //Navigator.pushNamed(context, '/tasks', arguments: todoList)
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -137,9 +136,4 @@ class _ManageListsPageState extends State<ManageListsPage> {
     });
     return list;
   }
-/*
-  void saveUserData() async {
-    final prefs = await SharedPreferences.getInstance();
-    prefs.setString("data", jsonEncode(widget.data));
-  }*/
 }

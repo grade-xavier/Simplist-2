@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simplist/models.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class TodoList extends StatefulWidget {
   final TodoListData todoList;
@@ -51,7 +52,8 @@ class _ListItemState extends State<TodoList> {
                     )),
           IconButton(
               icon: const Icon(Icons.delete),
-              tooltip: 'Delete this item',
+              tooltip: AppLocalizations.of(context)!.deleteList,
+
               onPressed: () {
                 widget.onDelete.call();
               })

@@ -1,0 +1,23 @@
+{
+  "helloWorld": "Hallo Wereld!",
+  "lists": "Lijsten",
+  "errMsgMissingTitle": "Je moet een titel typen",
+  "searchOrAddList": "Zoek of voeg een lijst toe",
+  "searchOrAddItem": "Zoek of voeg een item toe",
+  "addList": "Lijst toevoegen",
+  "addItem": "Item toevoegen",
+  "goBack": "Ga terug",
+  "deleteItem": "Verwijder dit item",
+  "deleteList": "Verwijder deze lijst",
+
+  "inside": "In {title}",
+  "@inside": {
+    "description": "Titel van de lijst",
+    "placeholders": {
+      "title": {
+        "type": "String",
+        "example": "Boodschappen"
+      }
+    }
+  }
+}

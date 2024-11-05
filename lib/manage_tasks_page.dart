@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simplist/models.dart';
 import 'package:simplist/task_widget.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ManageTasksPage extends StatefulWidget {
   final String title;
@@ -21,6 +22,7 @@ class _ManageTasksPageState extends State<ManageTasksPage> {
   void backButtonClick() {
     Navigator.pop(context);
   }
+
   void addButtonClick() {
     if (searchInputController.text.isNotEmpty) {
       setState(() {
@@ -32,8 +34,9 @@ class _ManageTasksPageState extends State<ManageTasksPage> {
         searchInputController.text = "";
       });
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Type a title"), backgroundColor: Colors.red));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(AppLocalizations.of(context)!.errMsgMissingTitle),
+          backgroundColor: Colors.red));
     }
   }
 
@@ -60,8 +63,7 @@ class _ManageTasksPageState extends State<ManageTasksPage> {
                     height: 50,
                     width: 50,
                     child: IconButton(
-                        //color: Colors.blue,
-                        //backgroundColor:Colors.gray,
+                        tooltip: AppLocalizations.of(context)!.goBack,
                         onPressed: backButtonClick,
                         icon: Icon(Icons.arrow_back)),
                   ),
@@ -73,7 +75,7 @@ class _ManageTasksPageState extends State<ManageTasksPage> {
                         contentPadding:
                             EdgeInsets.symmetric(horizontal: 0, vertical: 0),
                         border: InputBorder.none,
-                        hintText: "Search or add task",
+                        hintText: AppLocalizations.of(context)!.searchOrAddItem,
                       ),
                       onChanged: (value) => {setState(() {})},
                       onEditingComplete: addButtonClick,
@@ -84,8 +86,7 @@ class _ManageTasksPageState extends State<ManageTasksPage> {
                     height: 50,
                     width: 50,
                     child: IconButton(
-                        //color: Colors.blue,
-                        //backgroundColor:Colors.gray,
+                        tooltip: AppLocalizations.of(context)!.addItem,
                         onPressed: addButtonClick,
                         icon: Icon(Icons.add)),
                   ),
@@ -96,7 +97,7 @@ class _ManageTasksPageState extends State<ManageTasksPage> {
             Padding(
               padding:
                   const EdgeInsets.symmetric(vertical: 0.0, horizontal: 8.0),
-              child: Text("In ${widget.title}"),
+              child: Text(AppLocalizations.of(context)!.inside(widget.title)),
             ),
 
             //LIST
@@ -113,7 +114,7 @@ class _ManageTasksPageState extends State<ManageTasksPage> {
                           onCheckedChanged: (value) => {
                             setState(() {
                               item.checked = value;
-                              searchInputController.text="";
+                              searchInputController.text = "";
                               widget.onNeedSave.call();
                             })
                           },

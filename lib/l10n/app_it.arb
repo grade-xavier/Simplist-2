@@ -1,0 +1,23 @@
+{
+  "helloWorld": "Ciao Mondo!",
+  "lists": "Liste",
+  "errMsgMissingTitle": "Devi inserire un titolo",
+  "searchOrAddList": "Cerca o aggiungi una lista",
+  "searchOrAddItem": "Cerca o aggiungi un elemento",
+  "addList": "Aggiungi lista",
+  "addItem": "Aggiungi elemento",
+  "goBack": "Torna indietro",
+  "deleteItem": "Elimina questo elemento",
+  "deleteList": "Elimina questa lista",
+
+  "inside": "In {title}",
+  "@inside": {
+    "description": "Titolo della lista",
+    "placeholders": {
+      "title": {
+        "type": "String",
+        "example": "Spesa"
+      }
+    }
+  }
+}

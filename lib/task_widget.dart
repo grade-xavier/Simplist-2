@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simplist/models.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Task extends StatefulWidget {
   final TaskData taskData;
@@ -56,7 +57,7 @@ class _TaskState extends State<Task> {
                     )),
           IconButton(
               icon: const Icon(Icons.delete),
-              tooltip: 'Delete this item',
+              tooltip: AppLocalizations.of(context)!.deleteItem,
               onPressed: () {
                 widget.onDelete.call();
               })

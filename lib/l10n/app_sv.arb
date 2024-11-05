@@ -1,0 +1,23 @@
+{
+    "helloWorld": "Tjena världen!",
+    "lists": "Listor",
+    "errMsgMissingTitle": "Du behöver skriva en titel",
+    "searchOrAddList": "Sök eller lägg till lista",
+    "searchOrAddItem": "Sök eller lägg till post",
+    "addList": "Lägg till lista",
+    "addItem": "Lägg till post",
+    "goBack": "Gå tillbaka",
+    "deleteItem":"Radera posten",
+    "deleteList":"Radera listan",
+
+    "inside": "I {title}",
+    "@inside": {
+      "description": "Title of list",
+      "placeholders": {
+        "title": {
+          "type": "String",
+          "example": "Shopping"
+        }
+      }
+    }
+}

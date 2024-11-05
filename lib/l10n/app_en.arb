@@ -1,0 +1,23 @@
+{
+  "helloWorld": "Hello World!",
+  "lists": "Lists",
+  "errMsgMissingTitle": "You need to type a title",
+  "searchOrAddList": "Search or add a list",
+  "searchOrAddItem": "Search or add a item",
+  "addList": "Add list",
+  "addItem": "Add item",
+  "goBack": "Go back",
+  "deleteItem":"Delete this item",
+  "deleteList":"Delete this list",
+
+  "inside": "In {title}",
+  "@inside": {
+    "description": "Title of list",
+    "placeholders": {
+      "title": {
+        "type": "String",
+        "example": "Shopping"
+      }
+    }
+  }
+}

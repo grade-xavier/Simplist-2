@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'models.dart';
 import 'manage_lists_page.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -15,8 +16,8 @@ Future<dynamic> callAsyncFetch() async {
   String data = prefs.getString('data') ?? "";
   //data = "";
 
-  if(data == "") {
-      data = await rootBundle.loadString('assets/data.json');
+  if (data == "") {
+    data = await rootBundle.loadString('assets/data.json');
   }
 
   return UserData.fromJson(jsonDecode(data));
@@ -40,13 +41,16 @@ class MyApp extends StatelessWidget {
           if (snapshot.hasData) {
             return MaterialApp(
               title: 'Simplist',
+
+              //THEMES
               theme: ThemeData(
                 colorScheme: ColorScheme.highContrastDark(),
-//                scaffoldBackgroundColor:                    const Color.fromARGB(255, 123, 73, 131),
                 useMaterial3: true,
               ),
+              localizationsDelegates: AppLocalizations.localizationsDelegates,
+              supportedLocales: AppLocalizations.supportedLocales,
               home: ManageListsPage(
-                  title: 'Lists',
+                  title: "Lists",
                   data: snapshot.data,
                   onNeedSave: () async => {saveUserData(snapshot.data)}),
             );

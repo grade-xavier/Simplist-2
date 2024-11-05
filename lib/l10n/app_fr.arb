@@ -1,0 +1,23 @@
+{
+  "helloWorld": "Bonjour le monde!",
+  "lists": "Listes",
+  "errMsgMissingTitle": "Vous devez taper un titre",
+  "searchOrAddList": "Rechercher ou ajouter une liste",
+  "searchOrAddItem": "Rechercher ou ajouter un élément",
+  "addList": "Ajouter une liste",
+  "addItem": "Ajouter un élément",
+  "goBack": "Retourner",
+  "deleteItem": "Supprimer cet élément",
+  "deleteList": "Supprimer cette liste",
+
+  "inside": "Dans {title}",
+  "@inside": {
+    "description": "Titre de la liste",
+    "placeholders": {
+      "title": {
+        "type": "String",
+        "example": "Courses"
+      }
+    }
+  }
+}
