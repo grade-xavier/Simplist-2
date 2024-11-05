@@ -1,0 +1,525 @@
+{
+    "lists": [
+        {
+            "title": "1. Handla",
+            "items": [
+                {
+                    "title": "Ägg",
+                    "checked": true
+                },
+                {
+                    "title": "Mjölk",
+                    "checked": true
+                },
+                {
+                    "title": "Ansiktspapper",
+                    "checked": true
+                },
+                {
+                    "title": "Avfallspåsar",
+                    "checked": true
+                },
+                {
+                    "title": "Avfallspåsar (stora)",
+                    "checked": true
+                },
+                {
+                    "title": "Avokado 🥑",
+                    "checked": true
+                },
+                {
+                    "title": "Bacon",
+                    "checked": true
+                },
+                {
+                    "title": "Bakplåtspapper",
+                    "checked": true
+                },
+                {
+                    "title": "Bikarbonat",
+                    "checked": true
+                },
+                {
+                    "title": "Blomkål",
+                    "checked": true
+                },
+                {
+                    "title": "Blommor",
+                    "checked": true
+                },
+                {
+                    "title": "Brie",
+                    "checked": true
+                },
+                {
+                    "title": "Bröd 🍞",
+                    "checked": true
+                },
+                {
+                    "title": "Bubbel",
+                    "checked": true
+                },
+                {
+                    "title": "Bönor",
+                    "checked": true
+                },
+                {
+                    "title": "Cashewnötter",
+                    "checked": true
+                },
+                {
+                    "title": "Chevre",
+                    "checked": true
+                },
+                {
+                    "title": "Choklad 🍫",
+                    "checked": true
+                },
+                {
+                    "title": "Cornichons",
+                    "checked": true
+                },
+                {
+                    "title": "Crème fraîche",
+                    "checked": true
+                },
+                {
+                    "title": "Deodorant",
+                    "checked": true
+                },
+                {
+                    "title": "Dill",
+                    "checked": true
+                },
+                {
+                    "title": "Dippulver",
+                    "checked": true
+                },
+                {
+                    "title": "Diskmedel (hand-)",
+                    "checked": true
+                },
+                {
+                    "title": "Diskmedel (maskin-)",
+                    "checked": true
+                },
+                {
+                    "title": "Falukorv",
+                    "checked": true
+                },
+                {
+                    "title": "Fil-/filmjölk",
+                    "checked": true
+                },
+                {
+                    "title": "Fisk",
+                    "checked": true
+                },
+                {
+                    "title": "Fiskrom",
+                    "checked": true
+                },
+                {
+                    "title": "Fond",
+                    "checked": true
+                },
+                {
+                    "title": "Frityrolja",
+                    "checked": true
+                },
+                {
+                    "title": "Frukt 🍒🍏🍉",
+                    "checked": true
+                },
+                {
+                    "title": "Fönsterputs",
+                    "checked": true
+                },
+                {
+                    "title": "Gnocchi",
+                    "checked": true
+                },
+                {
+                    "title": "Godis 🍬",
+                    "checked": true
+                },
+                {
+                    "title": "Grillkol",
+                    "checked": true
+                },
+                {
+                    "title": "Grädde",
+                    "checked": true
+                },
+                {
+                    "title": "Gräddfil",
+                    "checked": true
+                },
+                {
+                    "title": "Grönsaker 🥒🍅🥕",
+                    "checked": true
+                },
+                {
+                    "title": "Ingefära",
+                    "checked": true
+                },
+                {
+                    "title": "Julmust",
+                    "checked": true
+                },
+                {
+                    "title": "Kaffepuver",
+                    "checked": true
+                },
+                {
+                    "title": "Kaffebönor ☕",
+                    "checked": true
+                },
+                {
+                    "title": "Kaffefilter",
+                    "checked": true
+                },
+                {
+                    "title": "Kammusslor",
+                    "checked": true
+                },
+                {
+                    "title": "Kaviar",
+                    "checked": true
+                },
+                {
+                    "title": "Kokosmjölk",
+                    "checked": true
+                },
+                {
+                    "title": "Krydda - paprika",
+                    "checked": true
+                },
+                {
+                    "title": "Krydda - curry",
+                    "checked": true
+                },
+                {
+                    "title": "Krydda - saffran",
+                    "checked": true
+                },
+                {
+                    "title": "Krydda - kummin",
+                    "checked": true
+                },
+                {
+                    "title": "Krydda - cayenne",
+                    "checked": true
+                },
+                {
+                    "title": "Kräftor",
+                    "checked": true
+                },
+                {
+                    "title": "Kyckling 🐔",
+                    "checked": true
+                },
+                {
+                    "title": "Kökshandduk",
+                    "checked": true
+                },
+                {
+                    "title": "Köksrengöring",
+                    "checked": true
+                },
+                {
+                    "title": "Kött 🍖",
+                    "checked": true
+                },
+                {
+                    "title": "Köttbullar",
+                    "checked": true
+                },
+                {
+                    "title": "Lamm",
+                    "checked": true
+                },
+                {
+                    "title": "Lax",
+                    "checked": true
+                },
+                {
+                    "title": "Lim",
+                    "checked": true
+                },
+                {
+                    "title": "Ljus",
+                    "checked": true
+                },
+                {
+                    "title": "Ljus (värme-)",
+                    "checked": true
+                },
+                {
+                    "title": "Lök",
+                    "checked": true
+                },
+                {
+                    "title": "Lök (röd-)",
+                    "checked": true
+                },
+                {
+                    "title": "Majonnäs",
+                    "checked": true
+                },
+                {
+                    "title": "Mandariner",
+                    "checked": true
+                },
+                {
+                    "title": "Mjölk 🐄",
+                    "checked": true
+                },
+                {
+                    "title": "Morötter",
+                    "checked": true
+                },
+                {
+                    "title": "Mozzarella",
+                    "checked": true
+                },
+                {
+                    "title": "Myrmedel",
+                    "checked": true
+                },
+                {
+                    "title": "Myrmedel",
+                    "checked": true
+                },
+                {
+                    "title": "Nagellack",
+                    "checked": true
+                },
+                {
+                    "title": "Nuggets",
+                    "checked": true
+                },
+                {
+                    "title": "Oliver",
+                    "checked": true
+                },
+                {
+                    "title": "Olivolja",
+                    "checked": true
+                },
+                {
+                    "title": "Ost (-fransk)",
+                    "checked": true
+                },
+                {
+                    "title": "Ost (-mögel)",
+                    "checked": true
+                },
+                {
+                    "title": "Ost 🧀",
+                    "checked": true
+                },
+                {
+                    "title": "Pajdeg",
+                    "checked": true
+                },
+                {
+                    "title": "Papperstallrikar",
+                    "checked": true
+                },
+                {
+                    "title": "Paprika",
+                    "checked": true
+                },
+                {
+                    "title": "Parmesanost",
+                    "checked": true
+                },
+                {
+                    "title": "Pasta",
+                    "checked": true
+                },
+                {
+                    "title": "Peppar",
+                    "checked": true
+                },
+                {
+                    "title": "Plastfolie",
+                    "checked": true
+                },
+                {
+                    "title": "Plastpåsar",
+                    "checked": true
+                },
+                {
+                    "title": "Potatis",
+                    "checked": true
+                },
+                {
+                    "title": "Pynt",
+                    "checked": true
+                },
+                {
+                    "title": "Pålägg",
+                    "checked": true
+                },
+                {
+                    "title": "Påskmust",
+                    "checked": true
+                },
+                {
+                    "title": "Rödsprit",
+                    "checked": true
+                },
+                {
+                    "title": "Salt (fin-)",
+                    "checked": true
+                },
+                {
+                    "title": "Salt (fling-)",
+                    "checked": true
+                },
+                {
+                    "title": "Salt (grov-)",
+                    "checked": true
+                },
+                {
+                    "title": "Schalottenlök",
+                    "checked": true
+                },
+                {
+                    "title": "Schampo",
+                    "checked": true
+                },
+                {
+                    "title": "Schweppes",
+                    "checked": true
+                },
+                {
+                    "title": "Senap (fransk)",
+                    "checked": true
+                },
+                {
+                    "title": "Senap (svensk)",
+                    "checked": true
+                },
+                {
+                    "title": "Servetter",
+                    "checked": true
+                },
+                {
+                    "title": "Skursvamp",
+                    "checked": true
+                },
+                {
+                    "title": "Slaskrensare",
+                    "checked": true
+                },
+                {
+                    "title": "Smör",
+                    "checked": true
+                },
+                {
+                    "title": "Snacks (fr)",
+                    "checked": true
+                },
+                {
+                    "title": "Snacks (sv)",
+                    "checked": true
+                },
+                {
+                    "title": "Socker",
+                    "checked": true
+                },
+                {
+                    "title": "Soja",
+                    "checked": true
+                },
+                {
+                    "title": "Sucketter",
+                    "checked": true
+                },
+                {
+                    "title": "Svamp 🍄",
+                    "checked": true
+                },
+                {
+                    "title": "Svinto",
+                    "checked": true
+                },
+                {
+                    "title": "Toapapper",
+                    "checked": true
+                },
+                {
+                    "title": "Tomater 🍅",
+                    "checked": true
+                },
+                {
+                    "title": "Tonfisk",
+                    "checked": true
+                },
+                {
+                    "title": "Tvättmedel",
+                    "checked": true
+                },
+                {
+                    "title": "Tvål (-dusch)",
+                    "checked": true
+                },
+                {
+                    "title": "Ungsrengöring",
+                    "checked": true
+                },
+                {
+                    "title": "Ved",
+                    "checked": true
+                },
+                {
+                    "title": "Vinsats",
+                    "checked": true
+                },
+                {
+                    "title": "Vinäger",
+                    "checked": true
+                },
+                {
+                    "title": "Vitlök",
+                    "checked": true
+                },
+                {
+                    "title": "Vitlökspulver",
+                    "checked": true
+                },
+                {
+                    "title": "Wc-anka",
+                    "checked": true
+                },
+                {
+                    "title": "Whiteboard marker",
+                    "checked": true
+                },
+                {
+                    "title": "Zucchini",
+                    "checked": true
+                },
+                {
+                    "title": "Ägg",
+                    "checked": true
+                },
+                {
+                    "title": "Äpplen",
+                    "checked": true
+                },
+                {
+                    "title": "Ättika",
+                    "checked": true
+                },
+                {
+                    "title": "Öronpinnar",
+                    "checked": true
+                }
+            ]
+        }
+    ]
+}

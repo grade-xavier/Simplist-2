@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'models.dart';
 import 'manage_lists_page.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
 void main() async {
   runApp(const MyApp());
@@ -11,8 +12,12 @@ void main() async {
 Future<dynamic> callAsyncFetch() async {
   //await Future.delayed(Duration(seconds: 3));
   final prefs = await SharedPreferences.getInstance();
-  String data = prefs.getString('data') ??
-      '{"lists": [{"title":"Liste numero 1","checked": false,"items": [{"title":"Poste numero 1.1","checked": false},{"title":"Poste numero 1.2","checked": false}]},{"title":"Liste numero 2","checked": false,"items": [{"title":"Poste numero 2.1","checked": false},{"title":"Poste numero 2.2","checked": false}]}]}';
+  String data = prefs.getString('data') ?? "";
+  //data = "";
+
+  if(data == "") {
+      data = await rootBundle.loadString('assets/data.json');
+  }
 
   return UserData.fromJson(jsonDecode(data));
 }
