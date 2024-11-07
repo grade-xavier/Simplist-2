@@ -9,6 +9,7 @@
   "goBack": "Voltar",
   "deleteItem": "Excluir este item",
   "deleteList": "Excluir esta lista",
+  "favorite":"As suas listas favoritas são apresentadas no topo",
 
   "inside": "Em {title}",
   "@inside": {

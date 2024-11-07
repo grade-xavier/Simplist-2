@@ -40,10 +40,6 @@ class _ManageListsPageState extends State<ManageListsPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        // appBar: AppBar(
-        //   backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        //   title: Text(widget.title),
-        // ),
         body: Column(
           children: <Widget>[
             //TOOLBAR
@@ -111,6 +107,12 @@ class _ManageListsPageState extends State<ManageListsPage> {
                               widget.onNeedSave.call();
                             })
                           },
+                          onFavorite: (value) => {
+                            setState(() {
+                              todoList.favorite = value;
+                              widget.onNeedSave.call();
+                            })
+                          },
                           onEdit: (value) => {
                             setState(() {
                               todoList.title = value;
@@ -131,9 +133,17 @@ class _ManageListsPageState extends State<ManageListsPage> {
   }
 
   List<TodoListData> getSortedList(list) {
+    
     list.sort((TodoListData a, TodoListData b) {
-      return a.title.compareTo(b.title);
-    });
+      if (a.favorite == b.favorite) {
+        return a.title.toLowerCase().compareTo(b.title.toLowerCase());
+      } else if (b.favorite && !a.favorite) {
+        return 1;
+      } else {
+        return -1;
+      }
+  });
+
     return list;
   }
 }

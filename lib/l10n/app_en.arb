@@ -9,6 +9,7 @@
   "goBack": "Go back",
   "deleteItem":"Delete this item",
   "deleteList":"Delete this list",
+  "favorite":"Your favorite lists are shown on top",
 
   "inside": "In {title}",
   "@inside": {

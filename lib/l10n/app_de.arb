@@ -9,6 +9,7 @@
   "goBack": "Ga terug",
   "deleteItem": "Verwijder dit item",
   "deleteList": "Verwijder deze lijst",
+  "favorite":"Je favoriete lijsten worden bovenaan weergegeven",
 
   "inside": "In {title}",
   "@inside": {

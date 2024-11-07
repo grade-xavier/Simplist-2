@@ -9,6 +9,7 @@
     "goBack": "Gå tillbaka",
     "deleteItem":"Radera posten",
     "deleteList":"Radera listan",
+    "favorite":"Dina favoritlistor visas högst upp",
 
     "inside": "I {title}",
     "@inside": {

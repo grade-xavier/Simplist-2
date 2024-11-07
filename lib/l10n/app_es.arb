@@ -9,6 +9,8 @@
     "goBack": "Volver",
     "deleteItem": "Eliminar este elemento",
     "deleteList": "Eliminar esta lista",
+  "favorite":"Las listas de favoritos se muestran en la parte superior",
+
     "inside": "En {title}",
     "@inside": {
         "description": "Título de la lista",

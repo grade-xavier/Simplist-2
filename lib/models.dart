@@ -39,20 +39,22 @@ class TaskData {
 class TodoListData  {
   final List<TaskData> items;
   String title = "";
-  TodoListData({required this.title, required this.items});
-  //TodoList({required super.title, required super.checked, required this.items});
+  bool favorite = false;
+  TodoListData({required this.title, required this.items, this.favorite=false});
+
   factory TodoListData.fromJson(Map<String, dynamic> json) {
     final title = json["title"];
+    final favorite = json["favorite"]??false;
     List<dynamic> jitems = json["items"] as List<dynamic>;
     List<TaskData> newList = List<TaskData>.empty(growable: true);
     for (var i = 0; i < jitems.length; i++) {
       Map<String, dynamic> jitem = jitems[i];
       newList.add(TaskData.fromJson(jitem));
     }
-    return TodoListData(title: title, items: newList);
+    return TodoListData(title: title, items: newList,favorite:favorite);
   }
 
   Map<String, dynamic> toJson() {
-    return {'title': title, 'items': items};
+    return {'title': title, 'items': items, 'favorite':favorite};
   }
 }

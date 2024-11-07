@@ -5,8 +5,10 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class TodoList extends StatefulWidget {
   final TodoListData todoList;
   final void Function() onDelete;
+
   final void Function() onOpen;
   final void Function(String) onEdit;
+  final void Function(bool) onFavorite;
 
   TodoList({
     super.key,
@@ -14,6 +16,7 @@ class TodoList extends StatefulWidget {
     required this.onDelete,
     required this.onEdit,
     required this.onOpen,
+    required this.onFavorite,
   });
 
   @override
@@ -51,12 +54,20 @@ class _ListItemState extends State<TodoList> {
                       },
                     )),
           IconButton(
+              icon: widget.todoList.favorite
+                  ? const Icon(Icons.star)
+                  : const Icon(Icons.star_border),
+              tooltip: AppLocalizations.of(context)!.favorite,
+              onPressed: () {
+                print(widget.todoList.favorite);
+                widget.onFavorite.call(!widget.todoList.favorite);
+              }),
+          IconButton(
               icon: const Icon(Icons.delete),
               tooltip: AppLocalizations.of(context)!.deleteList,
-
               onPressed: () {
                 widget.onDelete.call();
-              })
+              }),
         ],
       ),
     );
