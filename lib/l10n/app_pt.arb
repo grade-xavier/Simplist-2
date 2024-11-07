@@ -11,6 +11,10 @@
   "deleteList": "Excluir esta lista",
   "favorite":"As suas listas favoritas são apresentadas no topo",
 
+  "taskDeleted":"O item foi eliminado",
+  "listDeleted":"A lista foi eliminada",
+  "undo":       "Anular",
+    
   "inside": "Em {title}",
   "@inside": {
     "description": "Título da lista",

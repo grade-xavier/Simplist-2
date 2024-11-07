@@ -40,14 +40,36 @@ class _ManageTasksPageState extends State<ManageTasksPage> {
     }
   }
 
+  void deleteTask(item) {
+    setState(() {
+      widget.todoList.items.remove(item);
+      widget.onNeedSave.call();
+    });
+
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      backgroundColor: Color.fromARGB(255, 30, 50, 50),
+
+      content: Text(
+          style: TextStyle(color: Colors.white),
+          AppLocalizations.of(context)!.taskDeleted), //Text(AppLocalizations.of(context)!.errMsgMissingTitle),
+
+      action: SnackBarAction(
+        textColor: Colors.white,
+        label: AppLocalizations.of(context)!.undo,
+        onPressed: () {
+          setState(() {
+            widget.todoList.items.add(item);
+            widget.onNeedSave.call();
+          });
+        },
+      ),
+    ));
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        // appBar: AppBar(
-        //   backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        //   title: Text(widget.title),
-        // ),
         body: Column(
           children: <Widget>[
             //TOOLBAR
@@ -119,12 +141,7 @@ class _ManageTasksPageState extends State<ManageTasksPage> {
                             })
                           },
                           onOpen: () => {},
-                          onDelete: () => {
-                            setState(() {
-                              widget.todoList.items.remove(item);
-                              widget.onNeedSave.call();
-                            })
-                          },
+                          onDelete: () => {deleteTask(item)},
                           onEdit: (value) => {
                             setState(() {
                               item.title = value;

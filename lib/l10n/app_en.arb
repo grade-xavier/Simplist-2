@@ -7,10 +7,12 @@
   "addList": "Add list",
   "addItem": "Add item",
   "goBack": "Go back",
-  "deleteItem":"Delete this item",
-  "deleteList":"Delete this list",
-  "favorite":"Your favorite lists are shown on top",
-
+  "deleteItem": "Delete this item",
+  "deleteList": "Delete this list",
+  "favorite": "Your favorite lists are shown on top",
+  "taskDeleted": "The item has been deleted",
+  "listDeleted": "The list has been deleted",
+  "undo": "Undo",
   "inside": "In {title}",
   "@inside": {
     "description": "Title of list",

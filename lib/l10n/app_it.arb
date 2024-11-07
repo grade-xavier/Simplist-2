@@ -11,6 +11,10 @@
   "deleteList": "Elimina questa lista",
   "favorite":"Gli elenchi preferiti sono visualizzati in alto",
 
+  "taskDeleted":"Il elemento è stata cancellata",
+  "listDeleted":"La lista è stata cancellata",
+  "undo":       "Undo",
+
   "inside": "In {title}",
   "@inside": {
     "description": "Titolo della lista",

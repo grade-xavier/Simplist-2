@@ -11,6 +11,10 @@
     "deleteList":"Radera listan",
     "favorite":"Dina favoritlistor visas högst upp",
 
+    "taskDeleted":"Posten har raderats",
+    "listDeleted":"Listan har raderats",
+    "undo":       "Ångra",
+
     "inside": "I {title}",
     "@inside": {
       "description": "Title of list",

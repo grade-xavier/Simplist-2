@@ -36,6 +36,30 @@ class _ManageListsPageState extends State<ManageListsPage> {
     }
   }
 
+  void deleteList(todoList) {
+    setState(() {
+      widget.data.lists.remove(todoList);
+      widget.onNeedSave.call();
+    });
+
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      backgroundColor: Color.fromARGB(255, 30, 50, 50),
+      content: Text(
+          style: TextStyle(color: Colors.white),
+          AppLocalizations.of(context)!.listDeleted),
+      action: SnackBarAction(
+        textColor: Colors.white,
+        label: AppLocalizations.of(context)!.undo,
+        onPressed: () {
+          setState(() {
+            widget.data.lists.add(todoList);
+            widget.onNeedSave.call();
+          });
+        },
+      ),
+    ));
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -101,12 +125,7 @@ class _ManageListsPageState extends State<ManageListsPage> {
                                       )),
                             )
                           },
-                          onDelete: () => {
-                            setState(() {
-                              widget.data.lists.remove(todoList);
-                              widget.onNeedSave.call();
-                            })
-                          },
+                          onDelete: () => {deleteList(todoList)},
                           onFavorite: (value) => {
                             setState(() {
                               todoList.favorite = value;
@@ -133,7 +152,6 @@ class _ManageListsPageState extends State<ManageListsPage> {
   }
 
   List<TodoListData> getSortedList(list) {
-    
     list.sort((TodoListData a, TodoListData b) {
       if (a.favorite == b.favorite) {
         return a.title.toLowerCase().compareTo(b.title.toLowerCase());
@@ -142,7 +160,7 @@ class _ManageListsPageState extends State<ManageListsPage> {
       } else {
         return -1;
       }
-  });
+    });
 
     return list;
   }

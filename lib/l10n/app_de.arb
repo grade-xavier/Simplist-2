@@ -10,6 +10,10 @@
   "deleteItem": "Verwijder dit item",
   "deleteList": "Verwijder deze lijst",
   "favorite":"Je favoriete lijsten worden bovenaan weergegeven",
+  
+  "taskDeleted":"Het item is verwijderd",
+  "listDeleted":"De lijst is verwijderd",
+  "undo":       "Rückgängig",
 
   "inside": "In {title}",
   "@inside": {
