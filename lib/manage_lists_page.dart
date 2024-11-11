@@ -106,43 +106,74 @@ class _ManageListsPageState extends State<ManageListsPage> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: ListView.builder(
-                    itemCount: widget.data.lists.length,
-                    itemBuilder: (context, index) {
-                      final todoList = getSortedList(widget.data.lists)[index];
-                      if (todoList.title.contains(searchInputController.text)) {
-                        return TodoList(
-                          todoList: todoList,
-                          onOpen: () => {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => ManageTasksPage(
+                child: widget.data.lists.isEmpty
+                    ? Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 0.0, horizontal: 8.0),
+                        child:
+                            Text(AppLocalizations.of(context)!.emptyListList),
+                      )
+                    : ListView.builder(
+                        itemCount: widget.data.lists.length,
+                        itemBuilder: (context, index) {
+                          final todoList =
+                              getSortedList(widget.data.lists)[index];
+                          if (todoList.title
+                              .contains(searchInputController.text)) {
+                            return TodoList(
+                              todoList: todoList,
+                              onOpen: () => {
+                                Navigator.push(
+                                  context,
+                                  PageRouteBuilder(
+                                    transitionDuration: Duration(milliseconds: 200),
+                                    reverseTransitionDuration: Duration(milliseconds: 200),
+                                    pageBuilder: (BuildContext context,
+                                        Animation<double> animation,
+                                        Animation<double> secondaryAnimation) {
+                                      return ManageTasksPage(
                                         title: todoList.title,
                                         todoList: todoList,
                                         onNeedSave: () =>
                                             {widget.onNeedSave.call()},
-                                      )),
-                            )
-                          },
-                          onDelete: () => {deleteList(todoList)},
-                          onFavorite: (value) => {
-                            setState(() {
-                              todoList.favorite = value;
-                              widget.onNeedSave.call();
-                            })
-                          },
-                          onEdit: (value) => {
-                            setState(() {
-                              todoList.title = value;
-                              widget.onNeedSave.call();
-                            })
-                          },
-                        );
-                      } else {
-                        return Container();
-                      }
-                    }),
+                                      );
+                                    },
+                                    transitionsBuilder: (BuildContext context,
+                                        Animation<double> animation,
+                                        Animation<double> secondaryAnimation,
+                                        Widget child) {
+                                      return SlideTransition(
+                                        position: Tween<Offset>(
+                                          begin: const Offset(0.0, 1.0),
+                                          end: const Offset(0.0, 0.0),
+                                        ).animate(CurvedAnimation(
+                                          parent: animation,
+                                          curve: Curves.easeInOut,
+                                        )),
+                                        child: child,
+                                      );
+                                    },
+                                  ),
+                                )
+                              },
+                              onDelete: () => {deleteList(todoList)},
+                              onFavorite: (value) => {
+                                setState(() {
+                                  todoList.favorite = value;
+                                  widget.onNeedSave.call();
+                                })
+                              },
+                              onEdit: (value) => {
+                                setState(() {
+                                  todoList.title = value;
+                                  widget.onNeedSave.call();
+                                })
+                              },
+                            );
+                          } else {
+                            return Container();
+                          }
+                        }),
               ),
             ),
           ],

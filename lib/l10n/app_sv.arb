@@ -1,28 +1,19 @@
 {
-    "helloWorld": "Tjena världen!",
-    "lists": "Listor",
-    "errMsgMissingTitle": "Du behöver skriva en titel",
-    "searchOrAddList": "Sök eller lägg till lista",
-    "searchOrAddItem": "Sök eller lägg till post",
-    "addList": "Lägg till lista",
-    "addItem": "Lägg till post",
-    "goBack": "Gå tillbaka",
-    "deleteItem":"Radera posten",
-    "deleteList":"Radera listan",
-    "favorite":"Dina favoritlistor visas högst upp",
-
-    "taskDeleted":"Posten har raderats",
-    "listDeleted":"Listan har raderats",
-    "undo":       "Ångra",
-
-    "inside": "I {title}",
-    "@inside": {
-      "description": "Title of list",
-      "placeholders": {
-        "title": {
-          "type": "String",
-          "example": "Shopping"
-        }
-      }
-    }
+  "helloWorld": "Tjena världen!",
+  "lists": "Listor",
+  "errMsgMissingTitle": "Du behöver skriva en titel",
+  "searchOrAddList": "Sök eller lägg till lista",
+  "searchOrAddItem": "Sök eller lägg till post",
+  "addList": "Lägg till lista",
+  "addItem": "Lägg till post",
+  "goBack": "Gå tillbaka",
+  "deleteItem": "Radera posten",
+  "deleteList": "Radera listan",
+  "favorite": "Dina favoritlistor visas högst upp",
+  "taskDeleted": "Posten har raderats",
+  "listDeleted": "Listan har raderats",
+  "undo": "Ångra",
+  "inside": "I {title}",
+  "emptyListList": "Det finns ingenting här. Skriv in ett namn och tryck på + för att lägga till en lista.",
+  "emptyTaskList": "Det finns inget här. Skriv ett namn och tryck på + för att lägga till ett objekt."
 }

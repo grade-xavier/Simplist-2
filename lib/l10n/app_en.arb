@@ -14,13 +14,6 @@
   "listDeleted": "The list has been deleted",
   "undo": "Undo",
   "inside": "In {title}",
-  "@inside": {
-    "description": "Title of list",
-    "placeholders": {
-      "title": {
-        "type": "String",
-        "example": "Shopping"
-      }
-    }
-  }
+  "emptyListList":"There is nothing here. Type a name and hit + to add a list.",
+  "emptyTaskList":"There is nothing here. Type a name and hit + to add an item."
 }

@@ -16,13 +16,6 @@
   "undo":       "Anular",
     
   "inside": "Em {title}",
-  "@inside": {
-    "description": "Título da lista",
-    "placeholders": {
-      "title": {
-        "type": "String",
-        "example": "Compras"
-      }
-    }
-  }
+    "emptyListList":"Não há nada aqui. Escreva um nome e prima + para adicionar uma lista.",
+  "emptyTaskList":"Não há nada aqui. Escreva um nome e prima + para adicionar um item."
 }

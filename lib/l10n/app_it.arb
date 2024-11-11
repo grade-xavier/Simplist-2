@@ -16,13 +16,6 @@
   "undo":       "Undo",
 
   "inside": "In {title}",
-  "@inside": {
-    "description": "Titolo della lista",
-    "placeholders": {
-      "title": {
-        "type": "String",
-        "example": "Spesa"
-      }
-    }
-  }
+    "emptyListList":"Qui non c'è nulla. Digitare un nome e premere + per aggiungere un elenco.",
+  "emptyTaskList":"Non c'è nulla qui. Digitare un nome e premere + per aggiungere un elemento."
 }

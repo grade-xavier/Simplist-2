@@ -9,20 +9,11 @@
   "goBack": "Ga terug",
   "deleteItem": "Verwijder dit item",
   "deleteList": "Verwijder deze lijst",
-  "favorite":"Je favoriete lijsten worden bovenaan weergegeven",
-  
-  "taskDeleted":"Het item is verwijderd",
-  "listDeleted":"De lijst is verwijderd",
-  "undo":       "Rückgängig",
-
+  "favorite": "Je favoriete lijsten worden bovenaan weergegeven",
+  "taskDeleted": "Het item is verwijderd",
+  "listDeleted": "De lijst is verwijderd",
+  "undo": "Rückgängig",
   "inside": "In {title}",
-  "@inside": {
-    "description": "Titel van de lijst",
-    "placeholders": {
-      "title": {
-        "type": "String",
-        "example": "Boodschappen"
-      }
-    }
-  }
+  "emptyListList": "Er is hier niets. Typ een naam en druk op + om een lijst toe te voegen.",
+  "emptyTaskList": "Er is hier niets. Typ een naam en druk op + om een item toe te voegen."
 }

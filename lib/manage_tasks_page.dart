@@ -119,14 +119,17 @@ class _ManageTasksPageState extends State<ManageTasksPage> {
             Padding(
               padding:
                   const EdgeInsets.symmetric(vertical: 0.0, horizontal: 8.0),
-              child: Text(AppLocalizations.of(context)!.inside(widget.title)),
+              child: Text(widget.title),
             ),
 
             //LIST
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: ListView.builder(
+                padding: const EdgeInsets.symmetric(vertical: 0,horizontal: 8.0),
+                child: widget.todoList.items.isEmpty?Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(AppLocalizations.of(context)!.emptyTaskList),
+                ):ListView.builder(
                     itemCount: widget.todoList.items.length,
                     itemBuilder: (context, index) {
                       final item = getSortedList(widget.todoList.items)[index];

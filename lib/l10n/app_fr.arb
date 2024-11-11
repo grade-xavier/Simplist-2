@@ -16,13 +16,6 @@
   "undo":       "Annuler",
 
   "inside": "Dans {title}",
-  "@inside": {
-    "description": "Titre de la liste",
-    "placeholders": {
-      "title": {
-        "type": "String",
-        "example": "Courses"
-      }
-    }
-  }
+    "emptyListList":"Il n'y a rien ici. Tapez un nom et appuyez sur + pour ajouter une liste.",
+  "emptyTaskList":"Il n'y a rien ici. Tapez un nom et appuyez sur + pour ajouter un élément."
 }

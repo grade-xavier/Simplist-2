@@ -14,13 +14,6 @@
     "listDeleted": "Se ha borrado la lista",
     "undo": "Deshacer",
     "inside": "En {title}",
-    "@inside": {
-        "description": "Título de la lista",
-        "placeholders": {
-            "title": {
-                "type": "String",
-                "example": "Compras"
-            }
-        }
-    }
+      "emptyListList":"Aquí no hay nada. Escribe un nombre y pulsa + para añadir una lista.",
+  "emptyTaskList":"Aquí no hay nada. Escribe un nombre y pulsa + para añadir un elemento."
 }
